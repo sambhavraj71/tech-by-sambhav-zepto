@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Franchise Opportunities | Franchise India</title>
+    <style>
+        /* Reset and basic styles */
+       /* ===== RESET & BASE STYLES ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #ff3b30;
+            --primary-dark: #d70015;
+            --secondary-color: #2a5bd7;
+            --accent-color: #00c896;
+            --dark-color: #222222;
+            --gray-color: #666666;
+            --light-gray: #f5f5f5;
+            --white: #ffffff;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            --shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.15);
+            --radius: 8px;
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--white);
+            color: var(--dark-color);
+            line-height: 1.6;
+            font-size: 14px;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background-color: var(--white);
+            padding: 10px 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+        }
+
+        header {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--primary-color);
+            letter-spacing: -0.5px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--gray-color);
+            font-weight: 500;
+            font-size: 13px;
+            padding: 6px 12px;
+            border-radius: 4px;
+            transition: var(--transition);
+            border: 1px solid transparent;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+            background-color: rgba(255, 59, 48, 0.08);
+            border-color: rgba(255, 59, 48, 0.2);
+        }
+
+        .user-actions {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .user-actions a {
+            text-decoration: none;
+            color: var(--gray-color);
+            font-weight: 500;
+            font-size: 13px;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+
+        .user-actions a:first-child {
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .user-actions a:last-child {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        .user-actions a:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+
+        .user-actions a:first-child:hover {
+            background-color: rgba(255, 59, 48, 0.1);
+        }
+
+        .user-actions a:last-child:hover {
+            background-color: var(--primary-dark);
+        }
+
+        /* ===== BANNER ===== */
+        .banner {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('banner-bg.jpg') center/cover no-repeat;
+            text-align: center;
+            padding: 80px 20px;
+            color: var(--white);
+            margin: 0 auto 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255, 59, 48, 0.2) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .banner h1 {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            line-height: 1.2;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .banner p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .search-bar {
+            display: flex;
+            max-width: 800px;
+            margin: 0 auto;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .search-bar select,
+        .search-bar input {
+            flex: 1;
+            min-width: 200px;
+            padding: 12px 15px;
+            border: none;
+            border-radius: var(--radius);
+            font-size: 14px;
+            background-color: rgba(255, 255, 255, 0.9);
+            transition: var(--transition);
+        }
+
+        .search-bar select:focus,
+        .search-bar input:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(255, 59, 48, 0.3);
+            background-color: var(--white);
+        }
+
+        .search-bar button {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: none;
+            padding: 12px 30px;
+            border-radius: var(--radius);
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            white-space: nowrap;
+        }
+
+        .search-bar button:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 59, 48, 0.4);
+        }
+
+        /* ===== CATEGORIES ===== */
+        .categories {
+            display: flex;
+            justify-content: center;
+            background-color: var(--white);
+            padding: 30px 20px;
+            margin: 0 auto 40px;
+            flex-wrap: wrap;
+            gap: 25px;
+            max-width: 1200px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        .category {
+            text-align: center;
+            padding: 15px;
+            border-radius: var(--radius);
+            transition: var(--transition);
+            cursor: pointer;
+            min-width: 120px;
+            border: 1px solid transparent;
+        }
+
+        .category:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--primary-color);
+            background-color: rgba(255, 59, 48, 0.05);
+        }
+
+        .category img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+            filter: grayscale(100%);
+            transition: var(--transition);
+        }
+
+        .category:hover img {
+            filter: grayscale(0%);
+            transform: scale(1.1);
+        }
+
+        .category p {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--gray-color);
+            transition: var(--transition);
+        }
+
+        .category:hover p {
+            color: var(--primary-color);
+        }
+
+        /* ===== TOP OPPORTUNITIES ===== */
+        .top-opportunities {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .top-opportunities h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--dark-color);
+            position: relative;
+        }
+
+        .top-opportunities h2::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary-color);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 25px;
+        }
+
+        .brand {
+            background-color: var(--white);
+            padding: 25px 15px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            border-radius: var(--radius);
+            transition: var(--transition);
+            border: 1px solid var(--light-gray);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 180px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .brand::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+        }
+
+        .brand:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--primary-color);
+        }
+
+        .brand img {
+            max-width: 100px;
+            height: 50px;
+            object-fit: contain;
+            margin-bottom: 15px;
+            transition: var(--transition);
+        }
+
+        .brand:hover img {
+            transform: scale(1.1);
+        }
+
+        .brand p {
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: var(--dark-color);
+        }
+
+        .brand p:last-child {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 13px;
+            margin-top: 5px;
+            padding: 4px 12px;
+            background-color: rgba(255, 59, 48, 0.1);
+            border-radius: 12px;
+            display: inline-block;
+        }
+
+        /* ===== NEWSLETTER ===== */
+        .newsletter {
+            background: linear-gradient(135deg, var(--secondary-color), #1e3a8a);
+            padding: 50px 20px;
+            text-align: center;
+            color: var(--white);
+            margin: 40px auto;
+        }
+
+        .newsletter h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .newsletter p {
+            margin-bottom: 25px;
+            opacity: 0.9;
+            font-size: 15px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .newsletter input {
+            padding: 14px 20px;
+            width: 100%;
+            max-width: 400px;
+            border: none;
+            border-radius: var(--radius);
+            font-size: 14px;
+            margin-right: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+            transition: var(--transition);
+        }
+
+        .newsletter input:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+            background-color: var(--white);
+        }
+
+        .newsletter button {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: none;
+            padding: 14px 30px;
+            border-radius: var(--radius);
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            margin-top: 15px;
+        }
+
+        .newsletter button:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 59, 48, 0.4);
+        }
+
+        /* ===== NEWS ===== */
+        .news {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .news h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--dark-color);
+            position: relative;
+        }
+
+        .news h2::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .news {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .news-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid var(--light-gray);
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--primary-color);
+        }
+
+        .news-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .news-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .news-card-content {
+            padding: 20px;
+        }
+
+        .news-card p:first-of-type {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--dark-color);
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .news-card p:last-of-type {
+            font-size: 13px;
+            color: var(--gray-color);
+            margin-top: 5px;
+        }
+
+        /* ===== ASK EXPERTS ===== */
+        .ask-experts {
+            background: linear-gradient(to right, var(--light-gray), var(--white));
+            padding: 60px 20px;
+            margin: 40px auto;
+            max-width: 1200px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        .ask-experts > div:first-child {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .ask-experts h2 {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--dark-color);
+            margin-bottom: 15px;
+        }
+
+        .ask-experts > div:first-child p {
+            font-size: 16px;
+            color: var(--gray-color);
+            margin-bottom: 20px;
+        }
+
+        .ask-experts img {
+            max-width: 300px;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+            border-radius: var(--radius);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .form {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .form input {
+            display: block;
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 15px;
+            border: 1px solid var(--light-gray);
+            border-radius: var(--radius);
+            font-size: 14px;
+            transition: var(--transition);
+            background-color: #fafafa;
+        }
+
+        .form input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(255, 59, 48, 0.1);
+            background-color: var(--white);
+        }
+
+        .form button {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: none;
+            padding: 14px 30px;
+            border-radius: var(--radius);
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .form button:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 59, 48, 0.3);
+        }
+
+        .form p {
+            font-size: 13px;
+            color: var(--gray-color);
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        /* ===== TESTIMONIALS ===== */
+        .testimonials {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .testimonials h2 {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--dark-color);
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .testimonials h2::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary-color);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .testimonial {
+            background-color: var(--white);
+            padding: 40px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid var(--light-gray);
+            position: relative;
+        }
+
+        .testimonial::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 60px;
+            color: var(--primary-color);
+            opacity: 0.2;
+            font-family: Georgia, serif;
+        }
+
+        .testimonial img {
+            max-width: 120px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .testimonial p {
+            font-size: 16px;
+            color: var(--gray-color);
+            line-height: 1.7;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .testimonial p:last-of-type {
+            color: var(--dark-color);
+            font-weight: 600;
+            font-style: normal;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background-color: #222;
+            color: var(--white);
+            padding: 60px 20px 30px;
+            margin-top: 50px;
+        }
+
+        .about {
+            text-align: center;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .about p {
+            font-size: 15px;
+            color: #b2bec3;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .about a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 8px 20px;
+            border: 1px solid var(--primary-color);
+            border-radius: var(--radius);
+            transition: var(--transition);
+            display: inline-block;
+        }
+
+        .about a:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        .footer-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .column {
+            padding: 15px;
+        }
+
+        .column h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .column ul {
+            list-style: none;
+        }
+
+        .column ul li {
+            color: #b2bec3;
+            margin-bottom: 10px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: var(--transition);
+            padding: 4px 0;
+        }
+
+        .column ul li:hover {
+            color: var(--primary-color);
+            padding-left: 5px;
+        }
+
+        .social-media {
+            text-align: center;
+            margin: 40px 0;
+            padding: 20px 0;
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+        }
+
+        .social-media a {
+            display: inline-block;
+            margin: 0 15px;
+            width: 40px;
+            height: 40px;
+            background-color: #333;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .social-media a:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        .social-media img {
+            width: 20px;
+            height: 20px;
+            filter: brightness(0) invert(1);
+        }
+
+        .bottom-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .bottom-nav a {
+            color: #b2bec3;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+
+        .bottom-nav a:hover {
+            color: var(--primary-color);
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .bottom-nav .newsletter {
+            background: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 10px;
+        }
+
+        .bottom-nav .newsletter input {
+            padding: 10px 15px;
+            border: 1px solid #444;
+            background-color: #333;
+            color: var(--white);
+            border-radius: var(--radius);
+            min-width: 200px;
+        }
+
+        .bottom-nav .newsletter button {
+            background-color: var(--primary-color);
+            padding: 10px 20px;
+        }
+
+        .copyright {
+            text-align: center;
+            font-size: 13px;
+            color: #888;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 1024px) {
+            .grid {
+                grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            }
+            
+            .news {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+            
+            .categories {
+                gap: 15px;
+            }
+            
+            .category {
+                min-width: 100px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            
+            nav ul {
+                justify-content: center;
+                gap: 10px;
+            }
+            
+            .user-actions {
+                margin-top: 10px;
+            }
+            
+            .banner h1 {
+                font-size: 28px;
+            }
+            
+            .banner p {
+                font-size: 16px;
+            }
+            
+            .search-bar {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .search-bar select,
+            .search-bar input {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .top-opportunities h2,
+            .news h2,
+            .testimonials h2,
+            .ask-experts h2 {
+                font-size: 24px;
+            }
+            
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+            
+            .brand {
+                padding: 15px 10px;
+                min-height: 160px;
+            }
+            
+            .newsletter {
+                padding: 40px 20px;
+            }
+            
+            .newsletter h3 {
+                font-size: 22px;
+            }
+            
+            .footer-links {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .bottom-nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .bottom-nav .newsletter {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .categories {
+                gap: 10px;
+            }
+            
+            .category {
+                min-width: 80px;
+                padding: 10px;
+            }
+            
+            .category img {
+                width: 40px;
+                height: 40px;
+            }
+            
+            .footer-links {
+                grid-template-columns: 1fr;
+            }
+            
+            .news {
+                grid-template-columns: 1fr;
+            }
+            
+            .ask-experts {
+                padding: 40px 15px;
+            }
+            
+            .form {
+                padding: 20px;
+            }
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        /* Ensure all containers fit screen */
+        .container, section, .banner, .top-opportunities, .news, .ask-experts, footer {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">franchiseindia.com</div>
+        <nav>
+            <ul>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Advertise</a></li>
+                <li><a href="#">Subscribe</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">All India</a></li>
+                <li><a href="#">Assessment</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <a href="#">Register</a>
+            <a href="#">Login</a>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h1>MASTER AND MULTI UNIT OPPORTUNITIES</h1>
+        <p>Your gateway to the best franchise opportunities in India</p>
+        <div class="search-bar">
+            <select>
+                <option>Select Industry</option>
+            </select>
+            <select>
+                <option>Select Location</option>
+            </select>
+            <input type="text" placeholder="Investment">
+            <button>Search</button>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="category">
+            <img src="beauty-health.png" alt="Beauty & Health">
+            <p>Beauty & Health</p>
+        </div>
+        <div class="category">
+            <img src="business-services.png" alt="Business Services">
+            <p>Business Services</p>
+        </div>
+        <div class="category">
+            <img src="dealers-distributors.png" alt="Dealers & Distributors">
+            <p>Dealers & Distributors</p>
+        </div>
+        <div class="category">
+            <img src="education.png" alt="Education">
+            <p>Education</p>
+        </div>
+        <div class="category">
+            <img src="fashion.png" alt="Fashion">
+            <p>Fashion</p>
+        </div>
+        <div class="category">
+            <img src="food-beverage.png" alt="Food & Beverage">
+            <p>Food & Beverage</p>
+        </div>
+        <div class="category">
+            <img src="home-based.png" alt="Home Based">
+            <p>Home Based</p>
+        </div>
+        <div class="category">
+            <img src="manufacturing.png" alt="Manufacturing">
+            <p>Manufacturing</p>
+        </div>
+        <div class="category">
+            <img src="hotel-tourism.png" alt="Hotel, Tourism & Hospitality">
+            <p>Hotel, Tourism & Hospitality</p>
+        </div>
+        <div class="category">
+            <img src="retail.png" alt="Retail">
+            <p>Retail</p>
+        </div>
+        <div class="category">
+            <img src="sports-entertainment.png" alt="Sports Entertainment">
+            <p>Sports Entertainment</p>
+        </div>
+    </section>
+
+    <section class="top-opportunities">
+        <h2>Top Business Opportunities</h2>
+        <div class="grid">
+            <div class="brand">
+                <img src="nyna-logo.png" alt="NYNA">
+                <p>NYNA Coffee</p>
+                <p>INR 50 Lakh - 1 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="red-schoolhouse-logo.png" alt="RED SchoolHouse">
+                <p>RED SchoolHouse</p>
+                <p>INR 30 Lakh - 50 Lakh</p>
+            </div>
+            <div class="brand">
+                <img src="bestshape-logo.png" alt="BESTSHAPE">
+                <p>BESTSHAPE</p>
+                <p>INR 50 Lakh - 1 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="mygulf-logo.png" alt="MyGulf">
+                <p>MyGulf</p>
+                <p>INR 50 Lakh - 1 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="spartan-logo.png" alt="Spartan">
+                <p>Spartan</p>
+                <p>INR 50 Lakh - 1 Cr</p>
+            </div>
+            <!-- Add all other brands from the screenshots similarly -->
+            <div class="brand">
+                <img src="au-pitit-crepe-logo.png" alt="Au Pitit Crepe">
+                <p>Au Pitit Crepe</p>
+                <p>INR 30 Lakh - 50 Lakh</p>
+            </div>
+            <div class="brand">
+                <img src="cinnezo-logo.png" alt="CinneZo">
+                <p>CinneZo</p>
+                <p>INR 50 Lakh - 1 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="spartan-logo.png" alt="Spartan">
+                <p>Spartan</p>
+                <p>INR 50 Lakh - 1 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="direct-english-logo.png" alt="Direct English">
+                <p>Direct English</p>
+                <p>INR 50 Lakh - 1 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="pitman-training-logo.png" alt="PITMAN">
+                <p>Pitman Training</p>
+                <p>INR 30 Lakh - 50 Lakh</p>
+            </div>
+            <div class="brand">
+                <img src="stellarossa-logo.png" alt="StellaRossa">
+                <p>StellaRossa</p>
+                <p>INR 50 Lakh - 1 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="laser-skin-logo.png" alt="LASER SKIN">
+                <p>LASER SKIN</p>
+                <p>INR 1 Cr - 2 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="flipout-logo.png" alt="FlipOut">
+                <p>FlipOut</p>
+                <p>INR 50 Lakh - 1 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="yogu-factory-logo.png" alt="Yogu FACTORY">
+                <p>Yogu FACTORY</p>
+                <p>INR 50 Lakh - 1 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="chipotle-logo.png" alt="Chipotle Mexican Grill">
+                <p>Chipotle Mexican Grill</p>
+                <p>INR 50 Lakh - 1 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="doner-shack-logo.png" alt="Doner & Shack">
+                <p>Doner & Shack</p>
+                <p>INR 1 Cr - 2 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="seven-fries-logo.png" alt="Seven Fries">
+                <p>Seven Fries</p>
+                <p>INR 20 Lakh - 30 Lakh</p>
+            </div>
+            <div class="brand">
+                <img src="smooth-factory-logo.png" alt="Smooth Factory">
+                <p>Smooth Factory</p>
+                <p>INR 10 Lakh - 20 Lakh</p>
+            </div>
+            <div class="brand">
+                <img src="tea-avenue-logo.png" alt="Tea Avenue">
+                <p>Tea Avenue</p>
+                <p>INR 50 Lakh - 1 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="boston-burger-logo.png" alt="Boston Burger">
+                <p>Boston Burger</p>
+                <p>INR 50 Lakh - 1 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="5asec-logo.png" alt="5asec">
+                <p>5asec</p>
+                <p>INR 1 Cr - 2 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="actioncoach-logo.png" alt="ActionCOACH">
+                <p>ActionCOACH</p>
+                <p>INR 20 Lakh - 30 Lakh</p>
+            </div>
+            <div class="brand">
+                <img src="basketball-training-logo.png" alt="Basketball Training Systems">
+                <p>Basketball Training Systems</p>
+                <p>INR 1 Cr - 2 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="brain-train-logo.png" alt="Brain Train Academy">
+                <p>Brain Train Academy</p>
+                <p>INR 10,000 - 50,000</p>
+            </div>
+            <div class="brand">
+                <img src="district13-logo.png" alt="District 13">
+                <p>District 13</p>
+                <p>INR 50 Lakh - 1 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="happyfeet-logo.png" alt="HappyFeet">
+                <p>HappyFeet</p>
+                <p>INR 10 Lakh - 20 Lakh</p>
+            </div>
+            <div class="brand">
+                <img src="coffee-company-logo.png" alt="The Coffee Company">
+                <p>The Coffee Company</p>
+                <p>INR 30 Lakh - 50 Lakh</p>
+            </div>
+            <div class="brand">
+                <img src="three-o-clock-logo.png" alt="Three O Clock">
+                <p>Three O Clock</p>
+                <p>INR 30 Lakh - 50 Lakh</p>
+            </div>
+            <div class="brand">
+                <img src="chocolats-bashi-logo.png" alt="Chocolats Bashi">
+                <p>Chocolats Bashi</p>
+                <p>INR 10 Lakh - 50 Lakh</p>
+            </div>
+            <div class="brand">
+                <img src="sabrosa-tacos-logo.png" alt="Sabrosa Tacos">
+                <p>Sabrosa Tacos</p>
+                <p>INR 30 Lakh - 50 Lakh</p>
+            </div>
+            <div class="brand">
+                <img src="konala-logo.png" alt="Konala">
+                <p>Konala</p>
+                <p>INR 30 Lakh - 50 Lakh</p>
+            </div>
+            <div class="brand">
+                <img src="burger-lobster-logo.png" alt="Burger & Lobster">
+                <p>Burger & Lobster</p>
+                <p>INR 2 Cr - 5 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="saltos-logo.png" alt="Salto's">
+                <p>Salto's</p>
+                <p>INR 50 Lakh - 1 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="galitos-logo.png" alt="Galitos">
+                <p>Galitos</p>
+                <p>INR 50 Lakh - 1 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="isso-logo.png" alt="Isso">
+                <p>Isso</p>
+                <p>INR 50 Lakh - 1 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="laronde-logo.png" alt="Laronde">
+                <p>Laronde</p>
+                <p>INR 30 Lakh - 50 Lakh</p>
+            </div>
+            <div class="brand">
+                <img src="moudgil-rewards-logo.png" alt="Moudgil Rewards">
+                <p>Moudgil Rewards</p>
+                <p>INR 50 Lakh - 1 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="sausage-saloon-logo.png" alt="Sausage Saloon">
+                <p>Sausage Saloon</p>
+                <p>INR 30 Lakh - 50 Lakh</p>
+            </div>
+            <div class="brand">
+                <img src="forty-fruity-logo.png" alt="Forty Fruity">
+                <p>Forty Fruity</p>
+                <p>INR 30 Lakh - 50 Lakh</p>
+            </div>
+            <!-- From page 2 -->
+            <div class="brand">
+                <img src="noodle-box-logo.png" alt="Noodle Box">
+                <p>Noodle Box</p>
+                <p>INR 50 Lakh - 1 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="social-gaming-logo.png" alt="The Social Gaming Group">
+                <p>The Social Gaming Group</p>
+                <p>INR 1 Cr - 2 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="sausage-saloon-logo.png" alt="Sausage Saloon">
+                <p>Sausage Saloon</p>
+                <p>INR 30 Lakh - 50 Lakh</p>
+            </div>
+            <div class="brand">
+                <img src="stumpys-hatchet-logo.png" alt="Stumpy's Hatchet">
+                <p>Stumpy's Hatchet</p>
+                <p>INR 50 Lakh - 1 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="forty-fruity-logo.png" alt="Forty Fruity">
+                <p>Forty Fruity</p>
+                <p>INR 30 Lakh - 50 Lakh</p>
+            </div>
+            <div class="brand">
+                <img src="giraffe-logo.png" alt="Giraffe">
+                <p>Giraffe</p>
+                <p>INR 1 Cr - 2 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="total-clean-logo.png" alt="Total Clean">
+                <p>Total Clean</p>
+                <p>INR 30 Lakh - 50 Lakh</p>
+            </div>
+            <div class="brand">
+                <img src="easygym-logo.png" alt="easyGym">
+                <p>easyGym</p>
+                <p>INR 2 Cr - 5 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="creator-logo.png" alt="The Creator">
+                <p>The Creator</p>
+                <p>INR 30 Lakh - 50 Lakh</p>
+            </div>
+            <div class="brand">
+                <img src="headcase-logo.png" alt="HEADCASE">
+                <p>Headcase</p>
+                <p>INR 20 Lakh - 30 Lakh</p>
+            </div>
+            <div class="brand">
+                <img src="cravy-logo.png" alt="CRAVY">
+                <p>Cravy</p>
+                <p>INR 50 Lakh - 1 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="burgertory-logo.png" alt="BURGERTORY">
+                <p>Burgertory</p>
+                <p>INR 30 Lakh - 50 Lakh</p>
+            </div>
+            <div class="brand">
+                <img src="pantry-logo.png" alt="The Pantry">
+                <p>The Pantry</p>
+                <p>INR 50 Lakh - 1 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="barber-sten-logo.png" alt="Barber Sten">
+                <p>Barber Sten</p>
+                <p>INR 30 Lakh - 50 Lakh</p>
+            </div>
+            <div class="brand">
+                <img src="sweet-factory-logo.png" alt="Sweet Factory">
+                <p>Sweet Factory</p>
+                <p>INR 50 Lakh - 1 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="figaro-pizza-logo.png" alt="Figaro Pizza">
+                <p>Figaro Pizza</p>
+                <p>INR 30 Lakh - 50 Lakh</p>
+            </div>
+            <div class="brand">
+                <img src="real-pizza-logo.png" alt="The Real Pizza Company">
+                <p>The Real Pizza Company</p>
+                <p>INR 30 Lakh - 50 Lakh</p>
+            </div>
+            <div class="brand">
+                <img src="franks-hot-dog-logo.png" alt="Franks Famous Hot Dog">
+                <p>Franks Famous Hot Dog</p>
+                <p>INR 10 Lakh - 20 Lakh</p>
+            </div>
+            <div class="brand">
+                <img src="barcelos-logo.png" alt="Barcelos">
+                <p>Barcelos</p>
+                <p>INR 50 Lakh - 1 Cr</p>
+            </div>
+            <div class="brand">
+                <img src="chuck-e-cheese-logo.png" alt="Chuck E Cheese">
+                <p>Chuck E Cheese</p>
+                <p>INR 1 Cr - 2 Cr</p>
+            </div>
+            <!-- Add any remaining brands if missed -->
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h3>Newsletter Signup</h3>
+        <input type="email" placeholder="Enter Your Email Id">
+        <button>Signup</button>
+        <p>Enter your email address to get access to our great content.</p>
+    </section>
+
+    <section class="news">
+        <h2>News</h2>
+        <!-- Example news cards based on screenshot -->
+        <div class="news-card">
+            <img src="news1.jpg" alt="BCI Women Partners with Aboud of Women's">
+            <p>BCI Women Partners with Aboud of Women's</p>
+            <p>14 Jan 2026</p>
+        </div>
+        <div class="news-card">
+            <img src="news2.jpg" alt="Fashion & More">
+            <p>Fashion & More Strengthens North India Stores</p>
+            <p>14 Jan 2026</p>
+        </div>
+        <div class="news-card">
+            <img src="news3.jpg" alt="Chrome Unveils USD600M Expansion">
+            <p>Chrome Unveils USD600M Expansion in Louisiana Retail & Housing</p>
+            <p>14 Jan 2026</p>
+        </div>
+        <div class="news-card">
+            <img src="news4.jpg" alt="Soda Strengthens North India">
+            <p>Soda Strengthens North India</p>
+            <p>14 Jan 2026</p>
+        </div>
+        <div class="news-card">
+            <img src="news5.jpg" alt="Daniel Hechter Accelerates">
+            <p>Daniel Hechter Accelerates Worker Welfare Push</p>
+            <p>14 Jan 2026</p>
+        </div>
+        <div class="news-card">
+            <img src="news6.jpg" alt="KROO Milano Enters South India">
+            <p>KROO Milano Enters South India</p>
+            <p>14 Jan 2026</p>
+        </div>
+        <div class="news-card">
+            <img src="news7.jpg" alt="Disabling Insiders Screen Count">
+            <p>Disabling Insiders Screen Count</p>
+            <p>Could Add Rs4600 Crore to Box</p>
+        </div>
+        <div class="news-card">
+            <img src="news8.jpg" alt="KAURI Ethanol Enters Chemical">
+            <p>KAURI Ethanol Enters Chemical</p>
+            <p>Strengthens South</p>
+        </div>
+        <div class="news-card">
+            <img src="news9.jpg" alt="Azor Turtle Expands Globally">
+            <p>Azor Turtle Expands Globally</p>
+            <p>15 Jan 2026</p>
+        </div>
+        <!-- Add more if needed -->
+    </section>
+
+    <section class="ask-experts">
+        <div>
+            <h2>FREE ADVICE ASK OUR EXPERTS!</h2>
+            <p>Tell us about your brand</p>
+            <img src="phone-mockup.png" alt="Phone Mockup">
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Enter Name">
+            <input type="text" placeholder="05 - Enter Mobile No">
+            <input type="email" placeholder="Enter Email">
+            <input type="text" placeholder="Enter Pincode">
+            <input type="text" placeholder="Enter Domain">
+            <button>Ask Our Experts</button>
+            <p>I want to subscribe for</p>
+            <p>Agree to the Terms & Conditions</p>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>TESTIMONIALS</h2>
+        <div class="testimonial">
+            <img src="jio-bp-logo.png" alt="Jio BP">
+            <p>"I am writing to express my sincere appreciation for the Ranchise India brand and the team. The venue and arrangements were handled by the Ranchise India very well. The event was like highly content with the quality and quantity of visitors and look forward to future events. Overall, we are extremely happy with our experience with this event and look forward to future collaborations."</p>
+            <p>Jio BP</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="about">
+            <p>Franchiseindia.com is world's # 1 franchise website and an Entrepreneur's daily dose. Under the aegis of Franchise India Holdings Ltd - Asia's largest integrated franchise solutions company, the website provides every minute detail to entrepreneurs on aspects of franchising. We offer global business the golden key to enter the thriving Indian market. From franchise business opportunities, partnerships, manufacturing, distribution, retail and much more. Franchiseindia.com is the one stop solution for every business expansion plans.</p>
+            <a href="#">VIEW FULL</a>
+        </div>
+        <div class="footer-links">
+            <div class="column">
+                <h4>Business Category</h4>
+                <ul>
+                    <li>Automotive</li>
+                    <li>Business Services</li>
+                    <li>Dealers & Distributors</li>
+                    <li>Industrial Machinery & Manufacturing</li>
+                    <li>Manpower, Domestic & Entertainment</li>
+                    <!-- Add more from screenshot -->
+                </ul>
+            </div>
+            <div class="column">
+                <h4>Beauty & Health</h4>
+                <ul>
+                    <li>Desert & Distributors</li>
+                    <li>Home Based Business</li>
+                    <li>Hotel Travel & Tourism</li>
+                    <!-- Add more -->
+                </ul>
+            </div>
+            <div class="column">
+                <h4>Franchise Locations</h4>
+                <ul>
+                    <li>Andhra Pradesh</li>
+                    <li>Assam</li>
+                    <li>Bihar</li>
+                    <!-- Add more -->
+                </ul>
+            </div>
+            <div class="column">
+                <h4>Annual Franchise</h4>
+                <ul>
+                    <li>Bihar</li>
+                    <li>Chhattisgarh</li>
+                    <li>Delhi</li>
+                    <!-- Add more -->
+                </ul>
+            </div>
+            <div class="column">
+                <h4>Owner Group Sites</h4>
+                <ul>
+                    <li>franchiseindia.com</li>
+                    <li>indianretailer.com</li>
+                    <li>restaurantindia.in</li>
+                    <li>wellnessindia.com</li>
+                    <li>educationbiz.in</li>
+                    <!-- Add more -->
+                </ul>
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="#"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+            <a href="#"><img src="instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="youtube.png" alt="YouTube"></a>
+        </div>
+        <div class="bottom-nav">
+            <a href="#">Home</a>
+            <a href="#">Search Franchise</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <div class="newsletter">
+                <input type="email" placeholder="Enter your Email Id">
+                <button>Signup</button>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>The information contained herein is of general nature and Franchise India makes no warranty, express or implied, regarding the accuracy or completeness of any information. Before making any decision or taking any action, you should consult a Franchise India professional. Copyright © 2026 Franchise India Holdings Ltd.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Minimal JavaScript for interactivity if needed, e.g., form submission
+        // For example, newsletter signup
+        document.querySelector('.newsletter button').addEventListener('click', function() {
+            alert('Subscribed!');
+        });
+        // Add similar for other forms if required
+    </script>
+</body>
+</html>

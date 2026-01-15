@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franchise India | Franchise and Business Opportunities in India</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* ===== RESET & BASE STYLES ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #e4002b;
+            --primary-dark: #c40023;
+            --secondary-color: #00b894;
+            --accent-color: #ff6b6b;
+            --dark-color: #222222;
+            --gray-color: #666666;
+            --light-gray: #eeeeee;
+            --background-color: #f5f5f5;
+            --white: #ffffff;
+            --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            --radius: 4px;
+            --transition: all 0.2s ease;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--dark-color);
+            font-size: 14px;
+            overflow-x: hidden;
+            width: 100%;
+            line-height: 1.5;
+        }
+
+        /* ===== HEADER & NAVIGATION ===== */
+        header {
+            background: var(--white);
+            padding: 10px 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary-color);
+            letter-spacing: -0.5px;
+            white-space: nowrap;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 12px;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--dark-color);
+            font-weight: 500;
+            font-size: 12px;
+            padding: 5px 10px;
+            border-radius: 3px;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            border: 1px solid transparent;
+            white-space: nowrap;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+            background-color: rgba(228, 0, 43, 0.08);
+            border-color: rgba(228, 0, 43, 0.2);
+        }
+
+        /* ===== BANNER SECTION ===== */
+        .banner {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('banner-bg.jpg') center/cover no-repeat;
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--white);
+            margin: 0 auto;
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        .banner h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+
+        /* ===== SEARCH FORM ===== */
+        .search-form {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            gap: 10px;
+            padding: 0 15px;
+            flex-wrap: wrap;
+        }
+
+        .search-form select {
+            flex: 1;
+            min-width: 200px;
+            padding: 10px;
+            border: 1px solid var(--light-gray);
+            border-radius: var(--radius);
+            font-size: 14px;
+            background-color: var(--white);
+            transition: var(--transition);
+        }
+
+        .search-form select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px rgba(228, 0, 43, 0.1);
+        }
+
+        .search-form button {
+            background: var(--primary-color);
+            color: var(--white);
+            border: none;
+            padding: 10px 25px;
+            border-radius: var(--radius);
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            white-space: nowrap;
+        }
+
+        .search-form button:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(228, 0, 43, 0.3);
+        }
+
+        /* ===== ACTION BUTTONS ===== */
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 25px auto;
+            padding: 0 15px;
+            flex-wrap: wrap;
+            max-width: 1200px;
+        }
+
+        .action-buttons button {
+            background: #800000;
+            color: var(--white);
+            padding: 10px 25px;
+            border: none;
+            border-radius: var(--radius);
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            white-space: nowrap;
+        }
+
+        .action-buttons button:hover {
+            background: #600000;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(128, 0, 0, 0.3);
+        }
+
+        /* ===== EXPERTS FORM ===== */
+        .experts-form {
+            background: var(--white);
+            padding: 20px;
+            box-shadow: var(--shadow);
+            margin: 30px auto;
+            border-radius: var(--radius);
+            max-width: 1200px;
+        }
+
+        /* ===== CARDS SECTION ===== */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 20px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            border-radius: var(--radius);
+            border: 1px solid var(--light-gray);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 200px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary-color);
+        }
+
+        .card img {
+            max-width: 80px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--dark-color);
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 13px;
+            color: var(--gray-color);
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .card a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 6px 15px;
+            border: 1px solid var(--primary-color);
+            border-radius: var(--radius);
+            transition: var(--transition);
+            font-size: 13px;
+        }
+
+        .card a:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        /* ===== VIDEO & EVENT CARDS ===== */
+        .video-cards, .event-cards {
+            display: flex;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .video-card, .event-card {
+            background: var(--white);
+            padding: 15px;
+            box-shadow: var(--shadow);
+            border-radius: var(--radius);
+            border: 1px solid var(--light-gray);
+            transition: var(--transition);
+            flex: 1;
+            min-width: 250px;
+            max-width: 380px;
+        }
+
+        .video-card:hover, .event-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-card img, .event-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: var(--radius);
+            margin-bottom: 15px;
+        }
+
+        .video-card h4, .event-card h4 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--dark-color);
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        /* ===== LOGO GRID ===== */
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+            gap: 15px;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+
+        .logo-grid img {
+            width: 100%;
+            height: 60px;
+            object-fit: contain;
+            background-color: var(--white);
+            padding: 10px;
+            border-radius: var(--radius);
+            border: 1px solid var(--light-gray);
+            transition: var(--transition);
+        }
+
+        .logo-grid img:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* ===== TABS ===== */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px auto;
+            padding: 0 15px;
+            flex-wrap: wrap;
+            max-width: 1200px;
+        }
+
+        .tabs button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--gray-color);
+            padding: 8px 15px;
+            border-bottom: 2px solid transparent;
+            transition: var(--transition);
+        }
+
+        .tabs button:hover {
+            color: var(--primary-color);
+        }
+
+        .tabs button.active {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        /* ===== NEWS CARDS ===== */
+        .news-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+
+        .news-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--light-gray);
+            transition: var(--transition);
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .news-card-content {
+            padding: 20px;
+        }
+
+        .news-card h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--dark-color);
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .news-card p {
+            font-size: 13px;
+            color: var(--gray-color);
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .news-card a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+            padding: 6px 15px;
+            border: 1px solid var(--primary-color);
+            border-radius: var(--radius);
+            transition: var(--transition);
+            display: inline-block;
+        }
+
+        .news-card a:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        /* ===== NEWSLETTER & SOCIAL ===== */
+        .newsletter-social {
+            display: flex;
+            justify-content: space-between;
+            background: var(--dark-color);
+            color: var(--white);
+            padding: 25px;
+            max-width: 1200px;
+            margin: 30px auto;
+            border-radius: var(--radius);
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .newsletter, .social {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .newsletter h3, .social h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--white);
+        }
+
+        .newsletter input {
+            width: 100%;
+            padding: 10px 15px;
+            border: 1px solid var(--gray-color);
+            border-radius: var(--radius);
+            font-size: 14px;
+            margin-bottom: 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--white);
+            transition: var(--transition);
+        }
+
+        .newsletter input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px rgba(228, 0, 43, 0.2);
+        }
+
+        .newsletter button {
+            background: var(--primary-color);
+            color: var(--white);
+            border: none;
+            padding: 10px 25px;
+            border-radius: var(--radius);
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            width: 100%;
+        }
+
+        .newsletter button:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .social-links a {
+            color: var(--white);
+            font-size: 20px;
+            text-decoration: none;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        /* ===== CONTENT SECTIONS ===== */
+        .about, .business-opportunities, .group-sites, .browse {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+
+        .about h2, .business-opportunities h2, .group-sites h2, .browse h2 {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .about p {
+            font-size: 14px;
+            color: var(--gray-color);
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* ===== BUSINESS OPPORTUNITIES ===== */
+        .business-opportunities .list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .business-opportunities .list > div {
+            background: var(--white);
+            padding: 20px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            border: 1px solid var(--light-gray);
+            transition: var(--transition);
+        }
+
+        .business-opportunities .list > div:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary-color);
+        }
+
+        .business-opportunities .list h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--dark-color);
+            margin-bottom: 10px;
+        }
+
+        .business-opportunities .list p {
+            font-size: 13px;
+            color: var(--gray-color);
+            line-height: 1.5;
+        }
+
+        /* ===== BROWSE SECTIONS ===== */
+        .browse h2 {
+            margin-top: 30px;
+            font-size: 20px;
+        }
+
+        .browse h2:first-child {
+            margin-top: 0;
+        }
+
+        .browse p {
+            font-size: 13px;
+            color: var(--gray-color);
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            text-align: center;
+            background: var(--white);
+            padding: 30px 20px;
+            border-top: 1px solid var(--light-gray);
+            margin-top: 50px;
+            width: 100%;
+        }
+
+        footer p {
+            color: var(--gray-color);
+            margin-bottom: 15px;
+            font-size: 13px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        footer ul {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            list-style: none;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        footer ul li {
+            color: var(--gray-color);
+            cursor: pointer;
+            transition: var(--transition);
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 13px;
+        }
+
+        footer ul li:hover {
+            color: var(--primary-color);
+            background-color: rgba(228, 0, 43, 0.08);
+        }
+
+        /* ===== MODAL STYLES (Consistent with previous) ===== */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .modal-content {
+            background: var(--white);
+            border-radius: var(--radius);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 480px;
+            position: relative;
+            animation: modalSlideIn 0.3s ease;
+            overflow: hidden;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        /* ... rest of modal styles from previous code ... */
+
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 1024px) {
+            .cards {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+            
+            .video-cards, .event-cards {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .video-card, .event-card {
+                min-width: 280px;
+            }
+            
+            .newsletter-social {
+                flex-direction: column;
+                gap: 25px;
+            }
+            
+            .newsletter, .social {
+                min-width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                height: auto;
+                padding: 10px 15px;
+            }
+            
+            .logo {
+                margin-bottom: 10px;
+            }
+            
+            nav ul {
+                justify-content: center;
+                gap: 8px;
+                width: 100%;
+            }
+            
+            .banner h1 {
+                font-size: 24px;
+            }
+            
+            .search-form {
+                flex-direction: column;
+            }
+            
+            .search-form select, .search-form button {
+                width: 100%;
+                min-width: 100%;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .action-buttons button {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .cards {
+                grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            }
+            
+            .video-card, .event-card {
+                min-width: 100%;
+            }
+            
+            .logo-grid {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            }
+            
+            .news-cards {
+                grid-template-columns: 1fr;
+            }
+            
+            .tabs {
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                justify-content: flex-start;
+                padding-bottom: 10px;
+            }
+            
+            .tabs button {
+                white-space: nowrap;
+                padding: 8px 12px;
+            }
+            
+            .business-opportunities .list {
+                grid-template-columns: 1fr;
+            }
+            
+            .modal-content {
+                margin: 10px;
+                max-height: 85vh;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .banner {
+                padding: 30px 15px;
+            }
+            
+            .banner h1 {
+                font-size: 20px;
+            }
+            
+            .cards {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .card {
+                padding: 15px;
+            }
+            
+            .logo-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .newsletter-social {
+                padding: 20px;
+            }
+            
+            .newsletter input, .newsletter button {
+                padding: 12px;
+            }
+            
+            .social-links {
+                justify-content: center;
+            }
+            
+            .about h2, .business-opportunities h2, .group-sites h2, .browse h2 {
+                font-size: 20px;
+            }
+            
+            footer ul {
+                gap: 15px;
+            }
+        }
+
+        /* Smooth scrolling and prevent horizontal scroll */
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        /* Ensure all containers don't cause overflow */
+        main, section, .search-form, .action-buttons, .cards, .video-cards, 
+        .event-cards, .logo-grid, .news-cards, .newsletter-social {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">franchiseindia.com</div>
+            <ul>
+                <li><a href="#">Buy a Brand License</a></li>
+                <li><a href="#">Sell your Business</a></li>
+                <li><a href="#">Expand Your Franchise</a></li>
+                <li><a href="#">Advertise</a></li>
+                <li><a href="#">Restaurant India</a></li>
+                <li><a href="#">Loan Against Property</a></li>
+                <li><a href="#">Investor</a></li>
+                <li><a href="#" class="open-search"><i class="fa fa-search"></i></a></li>
+                <li><a href="#" class="open-login">Register / Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h1>Search from 1500+ Business options</h1>
+        <div class="franchise-india-logo">FRANCHISE INDIA 2026</div>
+        <form class="search-form">
+            <select>
+                <option>Categories</option>
+            </select>
+            <select>
+                <option>Industry</option>
+            </select>
+            <select>
+                <option>Location</option>
+            </select>
+            <select>
+                <option>Select Sector</option>
+            </select>
+            <select>
+                <option>Select Service/Product</option>
+            </select>
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <div class="action-buttons">
+            <button>Start A Business Today</button>
+            <button>Appoint Channel Partners</button>
+            <div class="experts-form">
+                <h3>Ask our Experts</h3>
+                <input type="text" placeholder="Enter Your Brand">
+                <input type="tel" placeholder="Enter Mobile No">
+                <button>Submit</button>
+            </div>
+        </div>
+        <div class="why-register">
+            <h3>Why Should I Register ?</h3>
+            <p>To get access to over 10000+ Franchise Business Opportunities. Network with the growing Business Community to get expert interventions to let you learn to Grow & Expand your Business with Franchising.</p>
+        </div>
+    </section>
+
+    <section class="leading-franchises">
+        <h2>Leading Franchises Today</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="wow-momo-logo.png" alt="Wow Momo">
+                <p>Wow Momo Panchgani</p>
+                <p>Investment range: Rs. 10lac - 20lac</p>
+                <p>Area Required: 200 - 300</p>
+                <a href="#">Know More</a>
+            </div>
+            <div class="card">
+                <img src="nay-world-logo.png" alt="Nay World">
+                <p>Team Cycle World</p>
+                <p>Investment range: Rs. 30lac - 50lac</p>
+                <p>Area Required: 1000 - 1500</p>
+                <a href="#">Know More</a>
+            </div>
+            <div class="card">
+                <img src="kumon-logo.png" alt="Kumon">
+                <p>Kumon India</p>
+                <p>Investment range: Rs. 5lac - 10lac</p>
+                <p>Area Required: 600 - 1000</p>
+                <a href="#">Know More</a>
+            </div>
+            <div class="card">
+                <img src="brain-checker-logo.png" alt="Brain Checker">
+                <p>Brain Checker</p>
+                <p>Investment range: Rs. 5lac - 10lac</p>
+                <p>Area Required: 200 - 300</p>
+                <a href="#">Know More</a>
+            </div>
+            <!-- Add more as per screenshot -->
+        </div>
+    </section>
+
+    <section class="top-business">
+        <h2>Top Business Opportunities</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="cinnzeo-logo.png" alt="Cinnzeo">
+                <p>Cinnzeo Bakery Cafe</p>
+                <p>Investment range: Rs. 50lac - 1 Cr</p>
+                <p>Area Required: 600 - 1000</p>
+                <a href="#">Know More</a>
+            </div>
+            <!-- Add other cards like EveeZ, Auto Herb, Prestige, The Elephant, VI, Dale Carnegie, HomeBakers, Sankalp, Emporter, Pickyourtrail, Amante -->
+        </div>
+    </section>
+
+    <section class="top-dealership">
+        <h2>Top Dealership Opportunity</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="euro-sit-logo.png" alt="Euro Sit">
+                <p>EuroSit System Furniture</p>
+                <p>Investment Range: Rs. 4 Lac - 10 Lac</p>
+                <p>Space Required: 300 - 1000 Sq ft</p>
+                <a href="#">Know More</a>
+            </div>
+            <!-- Add SuperGas, AVPL, Nutera -->
+        </div>
+        <a href="#">View All</a>
+    </section>
+
+    <section class="trending-videos">
+        <h2>Trending Videos</h2>
+        <div class="video-cards">
+            <div class="video-card">
+                <img src="video1.png" alt="Franchise & Business Opportunities Expo, More 2023">
+                <p>Franchise & Business Opportunities Expo, More 2023</p>
+                <p>21-DEC</p>
+                <p>Franchiseindia Business Opportunities Expo</p>
+                <p>Hyderabad | Boomtown Opportunities Expo</p>
+                <p>1133 Views</p>
+            </div>
+            <!-- Add other videos -->
+        </div>
+    </section>
+
+    <section class="upcoming-events">
+        <h2>Upcoming Events</h2>
+        <div class="event-cards">
+            <div class="event-card">
+                <img src="fro-expo.png" alt="FRO EXPO">
+                <p>FRO EXPO Pune</p>
+                <p>31 Aug - 01 Sep, 2024, Messe Global Pune</p>
+                <p>Registration</p>
+                <p>Hotline: +91 9111443542</p>
+            </div>
+            <!-- Add more -->
+        </div>
+    </section>
+
+    <section class="top-international">
+        <h2>Top International Opportunities</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="easygym-logo.png" alt="easyGym">
+                <p>We offer low-cost gyms that are fun, convenient and affordable for everyone.</p>
+                <a href="#">Know More</a>
+            </div>
+            <!-- Add Spartan, The Coffee Company, Three O'Clock -->
+        </div>
+    </section>
+
+    <section class="top-franchise">
+        <h2>Top Franchise Opportunities</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="clovia-logo.png" alt="Clovia">
+                <p>Clovia</p>
+                <p>Investment range: Rs. 20lac - 30lac</p>
+                <p>Area Required: 400 - 500</p>
+                <a href="#">Know More</a>
+            </div>
+            <!-- Add more like Spelling Bee, Apogee Academy, Krittikas, Mud & Clay Preschool -->
+        </div>
+    </section>
+
+    <section class="featured-franchise">
+        <h2>Featured Franchise Companies</h2>
+        <div class="logo-grid">
+            <img src="alwaysorry-logo.png" alt="AlwaySorry">
+            <img src="baskin-robbins-logo.png" alt="Baskin Robbins">
+            <!-- Add all logos as per screenshot: Westside, Corporate Consultants, Cheeni, Ud, etc. -->
+        </div>
+    </section>
+
+    <section class="insights-news">
+        <h2>Franchise Insights and News</h2>
+        <div class="tabs">
+            <button class="active">News</button>
+            <button>Articles</button>
+            <button>Interviews</button>
+        </div>
+        <div class="news-cards">
+            <div class="news-card">
+                <img src="news1.png" alt="Kalyan Jewellers Partners with ICICI Bank">
+                <p>Kalyan Jewellers Partners with ICICI Bank for Women's Ahead of Women's Day</p>
+            </div>
+            <!-- Add more -->
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="testimonial">
+            <p>"I am writing to express my sincere appreciation for the Franchise Expo held in Gandhinagar. The venue and arrangements, especially handled by the Franchise India Team, were truly excellent. We are highly satisfied with the quality and quantity of leads generated during the expo. A special commendation goes to the Franchise India Team for their all-inclusive service. Of the leads generated we are extremely happy from our experience at Jio and look forward to future collaborations."</p>
+            <p> - Jio BP</p>
+        </div>
+        <!-- Add more -->
+    </section>
+
+    <section class="newsletter-social">
+        <div class="newsletter">
+            <h3>Newsletter Signup</h3>
+            <p>Share your email address to get sales update from the industry.</p>
+            <input type="email" placeholder="Enter Email id">
+            <button>Signup</button>
+        </div>
+        <div class="social">
+            <h3>Follow Franchise India</h3>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>About Franchise India</h2>
+        <p>Franchiseindia.com is world's # 1 franchise website and an Entrepreneur's daily dose. Under the aegis of Franchise India Holdings Ltd - Asia's largest integrated franchise solutions company, the website provides every minute detail to entrepreneurs on aspects of franchising, franchise opportunities, business opportunities, partnerships, dealers, manufacturing, distribution, retail and much more. The most exhaustive business platform on web, Franchiseindia.com has been a favourite destination for Franchise business since 1999.</p>
+        <p>Franchiseindia.com has unique business opportunities in Premium, Domestic and International domain. For our readers who seek the latest franchise news, we are a perfect franchise magazine with a stable stream of inward traffic and visitors on the website.</p>
+        <p>sections like what's new for industry articles and stories, interviews section for company/people profile and the news section which offers a daily dose of what's happening in franchising across the world.</p>
+        <p>Our investors and opportunity seekers even get an opportunity to get featured in the weekly FranchiseIndia.com newsletter that goes straight into the inbox of thousands of brands & investors. FranchiseIndia.com also provides a chance to promote the brand directly on the social network websites like Twitter, Facebook, LinkedIn, and more.</p>
+        <p>Here's why your brand should be there on franchiseindia.com</p>
+        <p>Besides, the abundance of business and franchise opportunities, Franchiseindia.com also has regular updates of the upcoming events in the franchise industry like India's largest franchise show, FRO (National Franchise Retail and SME show), BOS (Business Opportunity Shows) and also all the franchise and retail award shows by Franchise India. Visitors can start a new business by just registering on the website and that too for FREE. Franchiseindia.com users can browse through thousands of brands and choose the ideal opportunity.</p>
+        <p>Franchiseindia.com also updates you with a stable stream of inward traffic and visitors on the website.</p>
+        <p>Advertisers can also take benefits of the books and reports on Franchise India by clicking on the Bookstore section.</p>
+    </section>
+
+    <section class="business-opportunities">
+        <h2>Business Opportunities</h2>
+        <div class="list">
+            <div>
+                <h3>Automotive</h3>
+                <p>Automobile related</p>
+                <p>Four Wheeler</p>
+                <p>Heavy moving vehicles</p>
+                <a href="#">View All ></a>
+            </div>
+            <!-- Add all categories as per screenshot -->
+        </div>
+    </section>
+
+    <section class="group-sites">
+        <h2>Our Group Sites</h2>
+        <div class="logos">
+            <img src="entrepreneur-logo.png" alt="Entrepreneur">
+            <img src="indianretailer-logo.png" alt="IndianRetailers">
+            <!-- Add all -->
+        </div>
+    </section>
+
+    <section class="browse">
+        <h2>Browse By Investment Range</h2>
+        <p>Under 1 Lakh | Under 2 Lakh | Under 3 Lakh | Under 5 Lakh | Under 10 Lakh | Under 15 Lakh | Under 20 Lakh | Under 25 Lakh | Under 30 Lakh | Under 50 Lakh | Under 1 Crore</p>
+        <h2>Browse By States</h2>
+        <p>Andhra Pradesh | Karnataka | Kerala | ... </p>
+        <h2>Popular Cities</h2>
+        <p>Agra | Ahmedabad | Ajmer | Amravati | Amritsar | Aurangabad | Bareilly | Bathinda | Bengaluru | Bharatpur | Bhilwara | Bhopal | Bhubaneswar | Bilaspur | Bulandshahr | Chandigarh | Chennai | Chittoor | Coimbatore | Cuttack | Dehradun | Erode | Faridabad | Firozabad | Ghaziabad | Gurgaon | Guwahati | Gwalior | Hubli | Hyderabad | Indore | Jabalpur | Jaipur | Jalandhar | Jammu | Jamshedpur | Jhansi | Jodhpur | Kanpur | Kochi | Kolkata | Kota | Kottayam | Kozhikode | Lucknow | Ludhiana | Madurai | Mangalore | Meerut | Moradabad | Mumbai | Mysuru | Nagpur | Nashik | Navi Mumbai | Nellore | New Delhi | Noida | Panchkula | Panipat | Patna | Prayagraj | Puducherry | Pune | Raipur | Rajkot | Ranchi | Shimla | Srinagar | Surat | Thiruvananthapuram | Thrissur | Udaipur | Ujjain | Vadodara | Varanasi | Vellore | Vijayawada | Visakhapatnam | Warangal</p>
+    </section>
+
+    <footer>
+        <p>By using our site, you acknowledge that you have read and understand our terms and conditions.</p>
+        <button>Accept Cookies</button>
+        <p>Copyright © 2009-2026 FranchiseIndia.com Pvt Ltd.</p>
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+            <li>Sitemap</li>
+        </ul>
+    </footer>
+
+    <!-- Modals -->
+    <div id="loginModal" class="modal">
+        <!-- Content from previous -->
+    </div>
+    <div id="searchModal" class="modal">
+        <!-- Content from previous -->
+    </div>
+
+    <script>
+        // Tab handling
+        document.querySelectorAll('.tabs button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.tabs button').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                // Load content dynamically if needed
+            });
+        });
+
+        // Form submissions
+        document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+                alert('Submitted!');
+            });
+        });
+
+        // Modal handling as in previous responses
+    </script>
+</body>
+</html>

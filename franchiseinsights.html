@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business News, Startup News, Latest Industry Updates, Articles, Insights & Stories - Franchise India</title>
+    <style>
+        /* Global Styles */
+        /* ===== RESET & BASE STYLES ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #ff3b30;
+            --primary-dark: #d70015;
+            --secondary-color: #28a745;
+            --secondary-dark: #1e7e34;
+            --accent-color: #007bff;
+            --accent-dark: #0056b3;
+            --dark-color: #222222;
+            --gray-color: #666666;
+            --light-gray: #f8f9fa;
+            --white: #ffffff;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.15);
+            --radius: 8px;
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--white);
+            color: var(--dark-color);
+            line-height: 1.6;
+            font-size: 14px;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--accent-color);
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--accent-dark);
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ===== HEADER ===== */
+        .top-bar {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 12px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+        }
+
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--white);
+            letter-spacing: -0.5px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .top-bar nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .top-bar nav ul li a {
+            color: var(--white);
+            font-weight: 500;
+            font-size: 13px;
+            padding: 6px 12px;
+            border-radius: 4px;
+            transition: var(--transition);
+            border: 1px solid transparent;
+        }
+
+        .top-bar nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.3);
+            text-decoration: none;
+        }
+
+        .search {
+            background-color: var(--white);
+            color: var(--gray-color);
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .search:hover {
+            background-color: var(--secondary-dark);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        /* ===== HEADER TITLE ===== */
+        .header-title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 800;
+            margin: 40px auto;
+            color: var(--dark-color);
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .header-title::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* ===== FEATURED BANNER ===== */
+        .featured-banner {
+            display: flex;
+            gap: 30px;
+            margin: 40px auto;
+            background: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .banner-left {
+            flex: 2;
+            padding: 30px;
+            border-right: 1px solid var(--light-gray);
+        }
+
+        .banner-left img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: var(--radius);
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: var(--transition);
+        }
+
+        .banner-left img:hover {
+            transform: scale(1.01);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .banner-left h2 {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .banner-left p {
+            font-size: 15px;
+            color: var(--gray-color);
+            line-height: 1.7;
+        }
+
+        .banner-right {
+            flex: 1;
+            padding: 30px;
+            background-color: #f9f9f9;
+        }
+
+        .banner-right h3 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .trending-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .trending-list li {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .trending-list li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .trending-list li a {
+            color: var(--dark-color);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.5;
+            display: block;
+            transition: var(--transition);
+            padding: 5px;
+            border-radius: 4px;
+        }
+
+        .trending-list li a:hover {
+            color: var(--primary-color);
+            background-color: rgba(255, 59, 48, 0.05);
+            text-decoration: none;
+            padding-left: 10px;
+        }
+
+        /* ===== SECTIONS ===== */
+        section {
+            margin: 60px auto;
+        }
+
+        .section-title {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--dark-color);
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            bottom: 0;
+            left: 0;
+        }
+
+        /* ===== GRID LAYOUT ===== */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background-color: var(--white);
+            border: 1px solid var(--light-gray);
+            border-radius: var(--radius);
+            padding: 20px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--primary-color);
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: var(--radius);
+            margin-bottom: 20px;
+            transition: var(--transition);
+        }
+
+        .card:hover img {
+            transform: scale(1.05);
+        }
+
+        .card h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .card h3 a {
+            color: inherit;
+        }
+
+        .card h3 a:hover {
+            color: var(--primary-color);
+        }
+
+        .card p {
+            font-size: 13px;
+            color: var(--gray-color);
+            padding: 4px 10px;
+            background-color: rgba(40, 167, 69, 0.1);
+            border-radius: 12px;
+            display: inline-block;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        /* ===== MAGAZINE SECTION ===== */
+        .magazine {
+            background: linear-gradient(135deg, var(--secondary-color), #1e7e34);
+            padding: 60px 20px;
+            text-align: center;
+            color: var(--white);
+            margin: 60px auto;
+            border-radius: var(--radius);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .magazine::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .magazine h2 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .magazine p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+            position: relative;
+            z-index: 1;
+        }
+
+        .magazine form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .magazine input {
+            flex: 1;
+            min-width: 200px;
+            padding: 14px 20px;
+            border: none;
+            border-radius: var(--radius);
+            font-size: 14px;
+            background-color: rgba(255, 255, 255, 0.9);
+            transition: var(--transition);
+        }
+
+        .magazine input:focus {
+            outline: none;
+            background-color: var(--white);
+            box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+        }
+
+        .magazine button {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: none;
+            padding: 14px 40px;
+            border-radius: var(--radius);
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            white-space: nowrap;
+        }
+
+        .magazine button:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 59, 48, 0.4);
+        }
+
+        .magazine form p {
+            margin-top: 20px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* ===== CATEGORIES CAROUSEL ===== */
+        .categories-carousel {
+            display: flex;
+            overflow-x: auto;
+            gap: 25px;
+            padding: 20px 10px;
+            scrollbar-width: thin;
+            scrollbar-color: var(--primary-color) var(--light-gray);
+        }
+
+        .categories-carousel::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .categories-carousel::-webkit-scrollbar-track {
+            background: var(--light-gray);
+            border-radius: 10px;
+        }
+
+        .categories-carousel::-webkit-scrollbar-thumb {
+            background: var(--primary-color);
+            border-radius: 10px;
+        }
+
+        .category-card {
+            min-width: 250px;
+            text-align: center;
+            background-color: var(--white);
+            padding: 25px 20px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid transparent;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--primary-color);
+            background-color: rgba(255, 59, 48, 0.05);
+        }
+
+        .category-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: var(--radius);
+            margin-bottom: 20px;
+            transition: var(--transition);
+        }
+
+        .category-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .category-card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin-top: 10px;
+        }
+
+        /* ===== NEWSLETTER ===== */
+        .newsletter {
+            background-color: #343a40;
+            color: var(--white);
+            padding: 60px 20px;
+            text-align: center;
+            margin: 60px auto;
+            border-radius: var(--radius);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .newsletter::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255,255,255,0.05) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .newsletter h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .newsletter p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            opacity: 0.8;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+            position: relative;
+            z-index: 1;
+        }
+
+        .newsletter form {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            max-width: 500px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            flex-wrap: wrap;
+        }
+
+        .newsletter input {
+            flex: 1;
+            min-width: 250px;
+            padding: 12px 20px;
+            border: 1px solid #555;
+            border-radius: var(--radius);
+            font-size: 14px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--white);
+            transition: var(--transition);
+        }
+
+        .newsletter input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(255, 59, 48, 0.2);
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .newsletter input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .newsletter button {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: none;
+            padding: 12px 30px;
+            border-radius: var(--radius);
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            white-space: nowrap;
+        }
+
+        .newsletter button:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 59, 48, 0.4);
+        }
+
+        /* ===== FOOTER LINKS ===== */
+        .footer-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin: 60px auto 40px;
+        }
+
+        .footer-links > div {
+            padding: 20px;
+        }
+
+        .footer-links h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links ul li a {
+            color: var(--gray-color);
+            font-size: 13px;
+            transition: var(--transition);
+            display: inline-block;
+            padding: 4px 0;
+        }
+
+        .footer-links ul li a:hover {
+            color: var(--primary-color);
+            padding-left: 5px;
+            text-decoration: none;
+        }
+
+        /* ===== GROUP SITES ===== */
+        .group-sites {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .group-sites img {
+            width: 100%;
+            height: 60px;
+            object-fit: contain;
+            padding: 10px;
+            background-color: var(--white);
+            border: 1px solid var(--light-gray);
+            border-radius: var(--radius);
+            transition: var(--transition);
+            filter: grayscale(100%);
+            opacity: 0.7;
+        }
+
+        .group-sites img:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+            border-color: var(--primary-color);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow);
+        }
+
+        /* ===== COPYRIGHT ===== */
+        .copyright {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: var(--light-gray);
+            margin-top: 40px;
+            border-top: 3px solid var(--primary-color);
+            border-radius: var(--radius) var(--radius) 0 0;
+        }
+
+        .copyright p {
+            color: var(--gray-color);
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .copyright nav {
+            margin-top: 20px;
+        }
+
+        .copyright nav a {
+            color: var(--gray-color);
+            font-size: 13px;
+            padding: 0 10px;
+            border-right: 1px solid var(--gray-color);
+            transition: var(--transition);
+        }
+
+        .copyright nav a:hover {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .copyright nav a:last-child {
+            border-right: none;
+        }
+
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 1024px) {
+            .featured-banner {
+                flex-direction: column;
+            }
+            
+            .banner-left {
+                border-right: none;
+                border-bottom: 1px solid var(--light-gray);
+            }
+            
+            .grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 20px;
+            }
+            
+            .categories-carousel {
+                gap: 20px;
+            }
+            
+            .category-card {
+                min-width: 220px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar .container {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            
+            .top-bar nav ul {
+                justify-content: center;
+                gap: 10px;
+            }
+            
+            .header-title {
+                font-size: 28px;
+                margin: 30px auto;
+            }
+            
+            .banner-left img {
+                height: 200px;
+            }
+            
+            .banner-left h2 {
+                font-size: 20px;
+            }
+            
+            .section-title {
+                font-size: 24px;
+            }
+            
+            .grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 15px;
+            }
+            
+            .magazine h2,
+            .newsletter h2 {
+                font-size: 24px;
+            }
+            
+            .magazine form,
+            .newsletter form {
+                flex-direction: column;
+            }
+            
+            .magazine input,
+            .newsletter input {
+                width: 100%;
+                min-width: 100%;
+            }
+            
+            .footer-links {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            
+            .categories-carousel {
+                gap: 15px;
+                padding: 10px 5px;
+            }
+            
+            .category-card {
+                min-width: 180px;
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-title {
+                font-size: 22px;
+            }
+            
+            .section-title {
+                font-size: 20px;
+            }
+            
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .card {
+                padding: 15px;
+            }
+            
+            .footer-links {
+                grid-template-columns: 1fr;
+            }
+            
+            .group-sites {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .copyright nav a {
+                display: block;
+                padding: 8px 0;
+                border-right: none;
+                border-bottom: 1px solid var(--light-gray);
+            }
+            
+            .copyright nav a:last-child {
+                border-bottom: none;
+            }
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        /* Ensure all containers fit screen */
+        .container, section, .featured-banner, .magazine, .newsletter, footer {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <header class="top-bar">
+        <div class="container">
+            <div class="logo">franchiseindia.com</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">MSME</a></li>
+                    <li><a href="#">Electric Vehicles</a></li>
+                    <li><a href="#">Startup</a></li>
+                    <li><a href="#">Top Trends</a></li>
+                    <li><a href="#">Insights</a></li>
+                </ul>
+            </nav>
+            <div class="search">Search</div>
+        </div>
+    </header>
+
+    <!-- Header Title -->
+    <div class="header-title container">
+        Opportunities. Growth. Trends. Business.
+    </div>
+
+    <!-- Featured Banner -->
+    <section class="featured-banner container">
+        <div class="banner-left">
+            <img src="https://placehold.co/800x400?text=Kalyan+Jewellers+RCB+Styling+Partner" alt="Kalyan Jewellers Partners with RCB Women Ahead of Women’s T20 League 2026">
+            <h2>Kalyan Jewellers Partners with RCB Women Ahead of Women’s T20 League 2026</h2>
+            <p>RCB Women enter the Women’s T20 League 2026 as former champions, having secured the title in 2024.</p>
+        </div>
+        <div class="banner-right">
+            <h3>Top Trending Stories</h3>
+            <ul class="trending-list">
+                <li><a href="#">Fashion & Retail: Neeman’s Raises $4 Million to Accelerate Brick-and-Mortar Growth</a></li>
+                <li><a href="#">Retail: Omaxe Unveils ₹500-Crore Integrated Retail and Housing Project in Ludhiana</a></li>
+                <li><a href="#">Fashion & Retail: Suta Strengthens North India Footprint with New Gurugram Store</a></li>
+                <li><a href="#">Services: Blinkit Removes 10-Minute Delivery Messaging Amid Worker Welfare Push</a></li>
+                <li><a href="#">Beauty & Wellness: KIKO Milano Enters South India, Opens First Kerala Store in Kochi</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section class="container">
+        <h2 class="section-title">Articles</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://placehold.co/300x200?text=Biryani+Burgers" alt="How India Ate in 2025: Biryani, Burgers and Big Celebrations">
+                <h3><a href="#">How India Ate in 2025: Biryani, Burgers and Big Celebrations Define a Nation’s Appetite</a></h3>
+            </div>
+            <div class="card">
+                <img src="https://placehold.co/300x200?text=Indian+Malls" alt="The Future of Indian Malls">
+                <h3><a href="#">The Future of Indian Malls: Why Global Capital Is Betting Big on India’s Retail Revolution</a></h3>
+                <p>Fashion & Retail</p>
+            </div>
+            <div class="card">
+                <img src="https://placehold.co/300x200?text=Food+Delivery" alt="India’s food delivery platforms">
+                <h3><a href="#">India’s food delivery platforms generate ₹1.2 lakh crore output in FY24: NCAER-Prosus report</a></h3>
+                <p>Services</p>
+            </div>
+            <div class="card">
+                <img src="https://placehold.co/300x200?text=Pre-Millennial+Leaders" alt="How Pre-Millennial Leaders Continue to Rewrite the Rules of Modern Business">
+                <h3><a href="#">How Pre-Millennial Leaders Continue to Rewrite the Rules of Modern Business</a></h3>
+                <p>Retail</p>
+            </div>
+            <div class="card">
+                <img src="https://placehold.co/300x200?text=Artificial+Jewelry" alt="How to Start an Artificial Jewelry Business in India">
+                <h3><a href="#">How to Start an Artificial Jewelry Business in India</a></h3>
+                <p>Business Ideas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reports Section -->
+    <section class="container">
+        <h2 class="section-title">Reports</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://placehold.co/300x200?text=Tier+II+III+Markets" alt="Tier II & III Markets Emerge as Key Drivers of India’s Retail Growth: Report">
+                <h3><a href="#">Tier II & III Markets Emerge as Key Drivers of India’s Retail Growth: Report</a></h3>
+                <p>Retail</p>
+            </div>
+            <div class="card">
+                <img src="https://placehold.co/300x200?text=Mobiles+Electronics" alt="Mobiles & Electronics Continue to Lead Festive E-Commerce Sales: Study">
+                <h3><a href="#">Mobiles & Electronics Continue to Lead Festive E-Commerce Sales: Study</a></h3>
+                <p>E-commerce</p>
+            </div>
+            <div class="card">
+                <img src="https://placehold.co/300x200?text=REIT" alt="Indian Retail REITs Potentially a INR 60,000">
+                <h3><a href="#">Indian Retail REITs Potentially a INR 60,000-80,000 Cr Market by 2030 - Anarock</a></h3>
+                <p>Trends</p>
+            </div>
+            <div class="card">
+                <img src="https://placehold.co/300x200?text=Internet+Users" alt="Only 20-25% of India's 850 million internet users shop online">
+                <h3><a href="#">Only 20-25% of India's 850 million internet users shop online, shows untapped potential: McKinsey Report</a></h3>
+                <p>E-commerce</p>
+            </div>
+            <div class="card">
+                <img src="https://placehold.co/300x200?text=Retail+Leasing" alt="Retail Leasing Dips 6% in Q2 2025 Across Top Indian Cities">
+                <h3><a href="#">Retail Leasing Dips 6% in Q2 2025 Across Top Indian Cities: Cushman & Wakefield</a></h3>
+                <p>Retail</p>
+            </div>
+            <div class="card">
+                <img src="https://placehold.co/300x200?text=Luxury+Market" alt="India’s Luxury Market Poised for 11–15% CAGR Growth">
+                <h3><a href="#">India’s Luxury Market Poised for 11–15% CAGR Growth in HNW & UHNW Segment Through 2034</a></h3>
+                <p>Retail</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interviews Section -->
+    <section class="container">
+        <h2 class="section-title">Interviews</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://placehold.co/300x200?text=Vinay+Chatlani" alt="Vinay Chatlani on Building Soch into a National Ethnic Wear Brand">
+                <h3><a href="#">Vinay Chatlani on Building Soch into a National Ethnic Wear Brand</a></h3>
+                <p>Fashion & Retail</p>
+            </div>
+            <div class="card">
+                <img src="https://placehold.co/300x200?text=Rajendra+Gandhi" alt="Building India’s Kitchens: Rajendra Gandhi on the StoveKraft Growth Story">
+                <h3><a href="#">Building India’s Kitchens: Rajendra Gandhi on the StoveKraft Growth Story</a></h3>
+                <p>Lifestyle Home & Furnishing</p>
+            </div>
+            <div class="card">
+                <img src="https://placehold.co/300x200?text=Brand+Concepts" alt="How Brand Concepts is Building a Fashion-Forward India">
+                <h3><a href="#">How Brand Concepts is Building a Fashion-Forward India</a></h3>
+                <p>Fashion & Retail</p>
+            </div>
+            <div class="card">
+                <img src="https://placehold.co/300x200?text=Trent+CFO" alt="Scaling with Strategy: Trent CFO Neeraj Basur on Expansion">
+                <h3><a href="#">Scaling with Strategy: Trent CFO Neeraj Basur on Expansion, Differentiation & the Future of Indian Fashion Retail</a></h3>
+                <p>Fashion & Retail</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Magazine Subscription -->
+    <section class="magazine">
+        <h2>The Franchising World Magazine</h2>
+        <p>For hassle free instant subscription, just give your number and email and our customer care agent will get in touch!</p>
+        <form>
+            <input type="email" placeholder="Enter Email">
+            <input type="tel" placeholder="Enter Mobile No.">
+            <button type="submit">Subscribe Now</button>
+            <p>or Click Here to Subscribe Online</p>
+        </form>
+    </section>
+
+    <!-- Top Categories -->
+    <section class="container">
+        <h2 class="section-title">Top Categories</h2>
+        <div class="categories-carousel">
+            <div class="category-card">
+                <img src="https://placehold.co/250x150?text=Startup" alt="Startup">
+                <h3>Startup</h3>
+            </div>
+            <div class="category-card">
+                <img src="https://placehold.co/250x150?text=Retail" alt="Retail">
+                <h3>Retail</h3>
+            </div>
+            <div class="category-card">
+                <img src="https://placehold.co/250x150?text=Expansion+Plans" alt="Expansion Plans">
+                <h3>Expansion Plans</h3>
+            </div>
+            <div class="category-card">
+                <img src="https://placehold.co/250x150?text=Funding" alt="Funding">
+                <h3>Funding</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Content -->
+    <section class="container">
+        <h2 class="section-title">Popular Content</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://placehold.co/300x200?text=Lenovo+Store" alt="Lenovo Targets Twofold Expansion In India Within Three">
+                <h3><a href="#">Lenovo Targets Twofold Expansion In India Within Three</a></h3>
+            </div>
+            <div class="card">
+                <img src="https://placehold.co/300x200?text=Chicco+Bets+Big" alt="Fashion & Retail Bets Big On India As Growth Market And Global">
+                <h3><a href="#">Fashion & Retail Bets Big On India As Growth Market And Global</a></h3>
+            </div>
+            <div class="card">
+                <img src="https://placehold.co/300x200?text=Apparel+Group" alt="Apparel Group Launches Levi's Kids In India, Opens Inaugural">
+                <h3><a href="#">Apparel Group Launches Levi's Kids In India, Opens Inaugural</a></h3>
+            </div>
+            <div class="card">
+                <img src="https://placehold.co/300x200?text=Swiggy+And+Magicpin" alt="Swiggy And Magicpin Bet On Customer Experience, Value To">
+                <h3><a href="#">Swiggy And Magicpin Bet On Customer Experience, Value To</a></h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter">
+        <h2>Newsletter Signup</h2>
+        <p>Share your email to get updates from the industry</p>
+        <form>
+            <input type="email" placeholder="Your email">
+            <button type="submit">Signup</button>
+        </form>
+    </section>
+
+    <!-- Footer Links -->
+    <footer class="container footer-links">
+        <div>
+            <h4>Business Opportunities</h4>
+            <ul>
+                <li><a href="#">Automobile</a></li>
+                <li><a href="#">Beauty & Health</a></li>
+                <!-- Add more from screenshot -->
+            </ul>
+        </div>
+        <!-- Add other columns -->
+        <div class="group-sites">
+            <h4>Our Group Sites</h4>
+            <img src="https://placehold.co/150x100?text=Entrepreneur" alt="Entrepreneur">
+            <img src="https://placehold.co/150x100?text=IndianRetail" alt="IndianRetail">
+            <!-- Add more -->
+        </div>
+    </footer>
+
+    <div class="copyright">
+        Copyright © 2006-2026 FranchiseIndia.com Ltd.
+        <nav>
+            <a href="#">Home</a> | <a href="#">About Us</a> | <a href="#">Contact Us</a> | <a href="#">News</a> | <a href="#">Testimonials</a> | <a href="#">Terms</a> | <a href="#">Sitemap</a>
+        </nav>
+    </div>
+
+    <script>
+        // Basic JS for carousel if needed
+        // For simplicity, assuming CSS handles overflow
+        console.log('Page loaded');
+    </script>
+</body>
+</html>
